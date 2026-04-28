@@ -2,7 +2,31 @@
 <html lang="es">
 
 <head>
-    
+    <style>
+
+/* ESTILO GENERAL */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+/* QUIÉNES SOMOS */
+#quienes {
+    background-color: #f4f1ea;
+    padding: 20px;
+}
+
+#quienes h2 {
+    color: #8e6b3a;
+    font-family: Georgia, serif;
+}
+
+#quienes p {
+    color: #444;
+    line-height: 1.6;
+}
+
+</style>
     <meta charset="UTF-8">
     <title>Cumbre del Cóndor</title>
 
@@ -12,7 +36,65 @@
     <!-- CSS IMPORTADO PARA PROMOCIONES -->
     <style>
         @import url("promociones.css");
+        
+
+
+        /* FORMULARIOS */
+        form {
+            width: 60%;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #243631;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        input[type="submit"] {
+            background-color: #243631;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #c9a96e;
+        }
+
+        .form-titulo {
+            text-align: center;
+            color: #c0392b;
+            font-family: Georgia, serif;
+        }
+
+        #login {
+            border-left: 5px solid #243631;
+        }
+
+        #registro {
+            border-left: 5px solid #c0392b;
+        }
+
     </style>
+
+</head>
     
     <style>
 /* Sección Quiénes Somos */
