@@ -1,0 +1,53 @@
+/* MOBILE FIRST (pantallas pequeñas) */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTENEDOR PRINCIPAL */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* SECCIONES */
+section {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* IMÁGENES RESPONSIVAS */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* MEDIA QUERY TABLET */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* MEDIA QUERY ESCRITORIO */
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* ESTILOS PARA IMPRESIÓN */
+@media print {
+    body {
+        color: black;
+        background: white;
+    }
+
+    img, video, audio {
+        display: none;
+    }
+}
